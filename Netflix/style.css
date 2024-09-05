@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.row_total{
+    width: 300px;
+    width: 100%;
+    height: 400px;
+    max-height: 200px;
+    object-fit: contain;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.row{
+    color: white;
+    font-style: bold;
+    margin-left: 20px;
+}
+.row_poster{
+    margin-right: 20px;
+    transition: transform 450ms;
+}
+.row_poster:hover{
+    transform: scale(1.08);
+}
+.row_total::-webkit-scrollbar{
+    display: none;
+}
+.row_large{
+    width: 600px;
+    height: 800px;
+    width: 100%;
+    max-height: 250px;
+    max-width: 300px;
+}
+.banner_content{
+    background: url(../Netflix/images/mh.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    height: 500px;
+    object-fit: contain;
+}
+.total{
+    margin-left: 20px;
+    height: 190px;
+}
+.banner_title{
+    font-size: 40px;
+    font-weight: 100px;
+    padding-top: 10px;
+}
+.banner_description{
+    width: 45rem;
+    line-height: 1.3;
+    font-size: 20px;
+    max-width: 700px;
+}
+.banner_buttons{
+    color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.banner_buttons:hover{
+    color: white;
+    background-color: black;
+
+}
+.logo{
+    width: 100px;
+    object-fit: contain;
+    position: fixed;
+    display: flex;
+}
+
+
