@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+    <script>
+        function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  let x = document.forms["myForm"]["age"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</head>
+<body bgcolor="aliceblue" style="color:black" >
+    <center>
+    <h1>HK ACADEMY 🎓</h1>
+    <h3>Training | Freshers Guidance | Tech News</h3>
+    <p>An investment in knowledge pays the best interest.</p>
+    <hr>
+    <h2>REGISTRATION FORM</h2>
+    <form class="myForms" onsubmit="return validateForm()" method="post">
+        <table>
+            <tr>
+                <td>NAME :</td><td><input type="text" name="fname" placeholder="Enter your Name"></td>
+            </tr>
+            <tr>
+                <td>AGE :</td><td><input type="number" name="age" placeholder="Enter your Age"></td>
+            </tr>
+            <tr>
+                <td>GENDER :</td>
+                <td><input type="radio" name="male">Male<input type="radio" name="female">Female</td>
+                
+            </tr>
+            <tr>
+                <td>EMAIL</td><td><input type="email" placeholder="Enter your Mail ID"></td>
+            </tr>
+            <tr>
+                <td>ADDRESS :</td><td><input type="text" placeholder="Enter your Address"></td>
+            </tr>
+            <tr>
+                <td>DEPARTMENT :</td>
+                <td>
+                    <select>
+                        <option>CSE</option>
+                        <option>IT</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>MECH</option>
+                        <option>CIVIL</option>
+                        <option>AI</option>
+                        <option>MBA</option>
+                        <option>MCA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Course :</td>
+                <td>
+                    <select>
+                        <option>Web Development</option>
+                        <option>Front End Development</option>
+                        <option>Python Full Stack</option>
+                        <option>Java Full Stack</option>
+                        <option>Artificial Intelligence</option>
+                        <option>Machine Learning</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Resume</td><td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>
+                    checkbox
+                </td>
+                <td>
+                    <input type="checkbox" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I have a book</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> I have a note</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> I have a pen</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td></td><td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+    </center>
+    
+
+</body>
+</html>
